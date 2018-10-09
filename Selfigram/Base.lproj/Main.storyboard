@@ -9,17 +9,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Chl-2C-Pd6">
             <objects>
-                <viewController id="h1o-yR-9sR" sceneMemberID="viewController">
+                <viewController id="h1o-yR-9sR" customClass="ProfileViewController" customModule="Selfigram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zhf-HG-5xF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MCG-AG-MVJ">
+                                <rect key="frame" x="105" y="114" width="165" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="26J-1x-JZg"/>
+                                    <constraint firstAttribute="height" constant="177" id="sPc-Fg-UtO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEw-ip-jd5">
+                                <rect key="frame" x="93" y="277" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="h1o-yR-9sR" eventType="touchUpInside" id="qvl-Ib-eP1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsw-Um-5Ua">
+                                <rect key="frame" x="149.5" y="299" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rsw-Um-5Ua" firstAttribute="centerX" secondItem="Zhf-HG-5xF" secondAttribute="centerX" id="2yN-ru-lJe"/>
+                            <constraint firstItem="MCG-AG-MVJ" firstAttribute="centerX" secondItem="Zhf-HG-5xF" secondAttribute="centerX" id="38i-kC-cPw"/>
+                            <constraint firstItem="MCG-AG-MVJ" firstAttribute="leading" secondItem="yEw-ip-jd5" secondAttribute="trailing" constant="-42" id="CAB-DJ-l9Q"/>
+                            <constraint firstItem="MCG-AG-MVJ" firstAttribute="top" secondItem="5SL-az-L9w" secondAttribute="top" constant="50" id="Syk-SK-o5x"/>
+                            <constraint firstItem="yEw-ip-jd5" firstAttribute="top" secondItem="MCG-AG-MVJ" secondAttribute="bottom" constant="-14" id="wr8-Lh-tAI"/>
+                            <constraint firstItem="Rsw-Um-5Ua" firstAttribute="top" secondItem="MCG-AG-MVJ" secondAttribute="bottom" constant="8" id="zJz-G1-wgz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5SL-az-L9w"/>
                     </view>
                     <navigationItem key="navigationItem" id="VLj-Ih-gQF"/>
+                    <connections>
+                        <outlet property="ProfileImageView" destination="MCG-AG-MVJ" id="zoB-ko-m7G"/>
+                        <outlet property="profileImageView" destination="MCG-AG-MVJ" id="Mfo-E8-MUI"/>
+                        <outlet property="usernameLabel" destination="Rsw-Um-5Ua" id="jDb-a7-v8J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3or-xG-JQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,5 +201,6 @@
     </scenes>
     <resources>
         <image name="NewsFeed" width="25" height="25"/>
+        <image name="placeholder" width="256" height="256"/>
     </resources>
 </document>
