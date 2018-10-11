@@ -15,6 +15,7 @@
 		971FDA622162F31C000C3DF7 /* SelfigramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FDA612162F31C000C3DF7 /* SelfigramUITests.swift */; };
 		974F8526216EEE3700DF4A9C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8525216EEE3700DF4A9C /* User.swift */; };
 		974F8528216EF11300DF4A9C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8527216EF11300DF4A9C /* Post.swift */; };
+		974F852A216EFB0C00DF4A9C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8529216EFB0C00DF4A9C /* FeedViewController.swift */; };
 		97902E29216C4BFF007D21CA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97902E28216C4BFF007D21CA /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		971FDA632162F31C000C3DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		974F8525216EEE3700DF4A9C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		974F8527216EF11300DF4A9C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		974F8529216EFB0C00DF4A9C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		97902E28216C4BFF007D21CA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				971FDA452162F31B000C3DF7 /* Main.storyboard */,
 				97902E28216C4BFF007D21CA /* ProfileViewController.swift */,
 				974F8525216EEE3700DF4A9C /* User.swift */,
+				974F8529216EFB0C00DF4A9C /* FeedViewController.swift */,
 				974F8527216EF11300DF4A9C /* Post.swift */,
 				971FDA482162F31C000C3DF7 /* Assets.xcassets */,
 				971FDA4A2162F31C000C3DF7 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				97902E29216C4BFF007D21CA /* ProfileViewController.swift in Sources */,
 				971FDA422162F31B000C3DF7 /* AppDelegate.swift in Sources */,
+				974F852A216EFB0C00DF4A9C /* FeedViewController.swift in Sources */,
 				974F8526216EEE3700DF4A9C /* User.swift in Sources */,
 				974F8528216EF11300DF4A9C /* Post.swift in Sources */,
 			);
