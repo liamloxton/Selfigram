@@ -16,6 +16,7 @@
 		974F8526216EEE3700DF4A9C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8525216EEE3700DF4A9C /* User.swift */; };
 		974F8528216EF11300DF4A9C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8527216EF11300DF4A9C /* Post.swift */; };
 		974F852A216EFB0C00DF4A9C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8529216EFB0C00DF4A9C /* FeedViewController.swift */; };
+		974F852E2175645500DF4A9C /* SelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F852D2175645500DF4A9C /* SelfieCell.swift */; };
 		97902E29216C4BFF007D21CA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97902E28216C4BFF007D21CA /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		974F8525216EEE3700DF4A9C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		974F8527216EF11300DF4A9C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		974F8529216EFB0C00DF4A9C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		974F852D2175645500DF4A9C /* SelfieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCell.swift; sourceTree = "<group>"; };
 		97902E28216C4BFF007D21CA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				974F8525216EEE3700DF4A9C /* User.swift */,
 				974F8529216EFB0C00DF4A9C /* FeedViewController.swift */,
 				974F8527216EF11300DF4A9C /* Post.swift */,
+				974F852D2175645500DF4A9C /* SelfieCell.swift */,
 				971FDA482162F31C000C3DF7 /* Assets.xcassets */,
 				971FDA4A2162F31C000C3DF7 /* LaunchScreen.storyboard */,
 				971FDA4D2162F31C000C3DF7 /* Info.plist */,
@@ -270,6 +273,7 @@
 				974F852A216EFB0C00DF4A9C /* FeedViewController.swift in Sources */,
 				974F8526216EEE3700DF4A9C /* User.swift in Sources */,
 				974F8528216EF11300DF4A9C /* Post.swift in Sources */,
+				974F852E2175645500DF4A9C /* SelfieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4QK3M87M2D;
 				INFOPLIST_FILE = Selfigram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4QK3M87M2D;
 				INFOPLIST_FILE = Selfigram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
