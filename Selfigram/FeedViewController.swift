@@ -4,7 +4,7 @@
 //
 //  Created by Eventbase on 2018-10-10.
 //  Copyright © 2018 Eventbase. All rights reserved.
-///Users/eventbase/Desktop/Lighthouse/Selfigram/Selfigram/ProfileViewController.swift
+// /Users/eventbase/Desktop/Lighthouse/Selfigram/Selfigram/ProfileViewController.swift
 
 import UIKit
 import Parse
@@ -26,15 +26,11 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
                     self.posts = posts
                     self.tableView.reloadData()
                 }
-            
             })
         } 
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
@@ -42,7 +38,6 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         let amount: Int = self.posts.count
         return amount
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! SelfieCell
@@ -64,14 +59,12 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         
         return cell
     }
-   
-    
     
     @IBAction func cameraButtonPressed(_ sender: Any) {
         // 1: Create an ImagePickerController
         let pickerController = UIImagePickerController()
         
-
+        
         pickerController.delegate = self
         
         if TARGET_OS_SIMULATOR == 1 {
@@ -85,17 +78,11 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         
         // Preset the pickerController on screen
         self.present(pickerController, animated: true, completion: nil)
-        
-        
     }
-   
     
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        // 1. When the delegate method is returned, it passes along a dictionary called info.
-        //    This dictionary contains multiple things that maybe useful to us.
-        //    We are getting an image from the UIImagePickerControllerOriginalImage key in that dictionary
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             
             // setting the compression quality to 90%
@@ -108,7 +95,6 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
                 
                 post.saveInBackground(block: { (success, error) -> Void in
                     if success {
-                        
                         self.posts.insert(post, at: 0)
                         
                         let indexPath = IndexPath(row: 0, section: 0)
@@ -118,7 +104,6 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
             }
         }
         dismiss(animated: true, completion: nil)
-
         tableView.reloadData()
     }
 }

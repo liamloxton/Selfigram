@@ -11,6 +11,9 @@ import Parse
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameLabel.text = "yourName"
@@ -18,9 +21,22 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var profileImageView: UIImageView!
-    
-    @IBOutlet weak var usernameLabel: UILabel!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let user = PFUser.current(){
+            usernameLabel.text = user.username
+            
+            if let imageFile = user["avatarImage"] as? PFFile {
+                
+                imageFile.getDataInBackground(block: { (data, error) -> Void in
+                    if let imageData = data {
+                        self.profileImageView.image = UIImage(data: imageData)
+                    }
+                })
+            }
+        }
+    }
     
     @IBAction func cameraButtonPressed(_ sender: Any) {
         // 1: Create an ImagePickerController
@@ -81,24 +97,4 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         dismiss(animated: true, completion: nil)
         
     }
-    
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        if let user = PFUser.current(){
-            usernameLabel.text = user.username
-            
-            if let imageFile = user["avatarImage"] as? PFFile {
-                
-                imageFile.getDataInBackground(block: { (data, error) -> Void in
-                    if let imageData = data {
-                        self.profileImageView.image = UIImage(data: imageData)
-                    }
-                })
-            }
-        }
-    }
-
-
 }
