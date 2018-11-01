@@ -16,6 +16,7 @@
 		971FDA4C2162F31C000C3DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971FDA4A2162F31C000C3DF7 /* LaunchScreen.storyboard */; };
 		971FDA572162F31C000C3DF7 /* SelfigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FDA562162F31C000C3DF7 /* SelfigramTests.swift */; };
 		971FDA622162F31C000C3DF7 /* SelfigramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971FDA612162F31C000C3DF7 /* SelfigramUITests.swift */; };
+		97366C26218A450C00845334 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97366C25218A450C00845334 /* Activity.swift */; };
 		974F8526216EEE3700DF4A9C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8525216EEE3700DF4A9C /* User.swift */; };
 		974F8528216EF11300DF4A9C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8527216EF11300DF4A9C /* Post.swift */; };
 		974F852A216EFB0C00DF4A9C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F8529216EFB0C00DF4A9C /* FeedViewController.swift */; };
@@ -56,6 +57,7 @@
 		971FDA5D2162F31C000C3DF7 /* SelfigramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfigramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		971FDA612162F31C000C3DF7 /* SelfigramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfigramUITests.swift; sourceTree = "<group>"; };
 		971FDA632162F31C000C3DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97366C25218A450C00845334 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		974F8525216EEE3700DF4A9C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		974F8527216EF11300DF4A9C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		974F8529216EFB0C00DF4A9C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				974F8529216EFB0C00DF4A9C /* FeedViewController.swift */,
 				974F8527216EF11300DF4A9C /* Post.swift */,
 				974F852D2175645500DF4A9C /* SelfieCell.swift */,
+				97366C25218A450C00845334 /* Activity.swift */,
 				971FDA482162F31C000C3DF7 /* Assets.xcassets */,
 				971FDA4A2162F31C000C3DF7 /* LaunchScreen.storyboard */,
 				971FDA4D2162F31C000C3DF7 /* Info.plist */,
@@ -391,6 +394,7 @@
 			files = (
 				97902E29216C4BFF007D21CA /* ProfileViewController.swift in Sources */,
 				971FDA422162F31B000C3DF7 /* AppDelegate.swift in Sources */,
+				97366C26218A450C00845334 /* Activity.swift in Sources */,
 				974F852A216EFB0C00DF4A9C /* FeedViewController.swift in Sources */,
 				974F8526216EEE3700DF4A9C /* User.swift in Sources */,
 				974F8528216EF11300DF4A9C /* Post.swift in Sources */,

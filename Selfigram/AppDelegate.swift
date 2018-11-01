@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             clientConfiguration.applicationId = "liam-loxton-lighthouse"
             clientConfiguration.server = "https://liam-loxton-lighthouse.herokuapp.com/parse"
         }
+        Activity.registerSubclass()
         Post.registerSubclass()
         Parse.initialize(with: configuration)
         

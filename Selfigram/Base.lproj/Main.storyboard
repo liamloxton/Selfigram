@@ -155,12 +155,26 @@
                                                 <constraint firstAttribute="height" constant="250" id="gp2-Bf-dfD"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N80-l6-ZV5">
+                                            <rect key="frame" x="328" y="258" width="23" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="23" id="Jvp-pa-MaY"/>
+                                                <constraint firstAttribute="height" constant="20" id="Vo3-HN-8U1"/>
+                                            </constraints>
+                                            <state key="normal" image="hearts-off"/>
+                                            <state key="selected" image="hearts-on"/>
+                                            <connections>
+                                                <action selector="likeButtonClicked:" destination="XOI-yC-cxx" eventType="touchUpInside" id="a2e-0H-SwO"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="5oQ-Az-PfH" firstAttribute="top" secondItem="2FE-Kp-huK" secondAttribute="top" id="909-rr-Xki"/>
                                         <constraint firstItem="9Vc-Fg-Q1d" firstAttribute="top" secondItem="ouW-3B-1kI" secondAttribute="bottom" constant="8" id="FL9-Mr-i0I"/>
                                         <constraint firstAttribute="trailing" secondItem="5oQ-Az-PfH" secondAttribute="trailing" id="Gkb-IG-uCD"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="N80-l6-ZV5" secondAttribute="trailing" constant="8" id="Nc5-H6-Y4j"/>
                                         <constraint firstItem="9Vc-Fg-Q1d" firstAttribute="leading" secondItem="2FE-Kp-huK" secondAttribute="leadingMargin" id="Ncy-VB-NYQ"/>
+                                        <constraint firstItem="N80-l6-ZV5" firstAttribute="top" secondItem="5oQ-Az-PfH" secondAttribute="bottom" constant="8" id="VMI-SE-hju"/>
                                         <constraint firstItem="ouW-3B-1kI" firstAttribute="top" secondItem="5oQ-Az-PfH" secondAttribute="bottom" constant="8" id="WJR-rG-QWb"/>
                                         <constraint firstItem="ouW-3B-1kI" firstAttribute="leading" secondItem="2FE-Kp-huK" secondAttribute="leadingMargin" id="qxi-Jd-feS"/>
                                         <constraint firstItem="5oQ-Az-PfH" firstAttribute="leading" secondItem="2FE-Kp-huK" secondAttribute="leading" id="vv1-Ti-wkT"/>
@@ -252,6 +266,8 @@
     </scenes>
     <resources>
         <image name="NewsFeed" width="25" height="25"/>
+        <image name="hearts-off" width="42" height="37"/>
+        <image name="hearts-on" width="42" height="37"/>
         <image name="placeholder" width="256" height="256"/>
     </resources>
 </document>
